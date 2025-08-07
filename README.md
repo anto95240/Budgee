@@ -68,7 +68,7 @@ git clone https://github.com/anto95240/Budgee.git
 cd Budgee
 ```
 
-#### Backend
+### Backend
 ```bash
 cd backend
 npm install
@@ -86,7 +86,7 @@ Démarrer le backend :
 npm run dev
 ```
 
-#### Frontend
+### Frontend
 ```bash
 cd ../frontend
 npm install
