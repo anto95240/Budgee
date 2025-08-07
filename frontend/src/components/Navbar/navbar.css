@@ -1,0 +1,120 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 20px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: var(--color-bg-main);
+  font-family: var(--font-family-title);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  transition: box-shadow 0.3s ease;
+  -webkit-transition: box-shadow 0.3s ease;
+  -moz-transition: box-shadow 0.3s ease;
+  -ms-transition: box-shadow 0.3s ease;
+  -o-transition: box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+  box-shadow: var(--shadow-navbar-scroll);
+}
+
+.page-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--color-navbar-btn-active);
+  white-space: nowrap;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+.profile-pic,
+.deconnexion-pic {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid var(--color-card-border);
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.profile-pic img{
+  width: 100%;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.theme-wrapper-desktop {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 10px 15px;
+    margin: 5px 5px 10px 5px;
+    border-radius: 8px;
+    width: 95%;
+  }
+
+  .theme-wrapper-desktop {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .page-title {
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .user-info {
+    display: flex;
+    top: 0;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
+    gap: 15px;
+  }
+
+  .bottom-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .user-name {
+    font-size: 14px;
+  }
+
+  .profile-pic,
+  .deconnexion-pic {
+    width: 35px;
+    height: 35px;
+  }
+}

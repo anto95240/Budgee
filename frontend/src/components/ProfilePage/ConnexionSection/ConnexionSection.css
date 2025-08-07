@@ -1,0 +1,88 @@
+.profile-card {
+  background: var(--color-bg-card-page-active);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: var(--shadow-navbar-scroll);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.profile-card h3 {
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-text);
+  font-family: var(--font-family-title);
+  margin-bottom: 20px;
+}
+
+.profile-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  height: 30px;
+  margin-top: 20px;
+}
+
+.account-info {
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-bg-main);
+  padding: 5px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.btn-blue {
+  background: var(--color-btn);
+  color: black;
+  font-family: var(--font-family-title);
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-light {
+  background: var(--color-bg-main);
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--color-text);
+  font-family: var(--font-family-title);
+  cursor: pointer;
+}
+
+hr{
+    color: var(--color-hr);
+}
+
+@media (max-width: 768px) {
+  .account-info-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .inline-form {
+    flex-direction: column;
+    margin: 10px 0;
+  }
+
+  .inline-form input {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .profile-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    height: auto;
+  }
+}
