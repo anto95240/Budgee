@@ -20,7 +20,7 @@ Développé par Antoine RICHARD
 - Thème clair/sombre
 - Internationalisation (français / anglais)
 - Responsive design (mobile / desktop)
-- Statistiques mensuelles (graphiques)
+- Statistiques mensuelles en temps réel (graphiques)
 - Affichage des transactions récentes (tableau + cartes responsive)
 - Page de profil (modification des infos, avatar, suppression)
 - Formulaires sécurisés pour inscription, connexion, mise à jour
@@ -101,14 +101,6 @@ Démarrer le frontend :
 ```bash
 npm run dev
 ```
-
-## Bonus
-
-- Responsive design (mobile / desktop)
-
-## Lien externe
-
-Figma : https://www.figma.com/design/iHhUT56KhHDlVPIMZrzq64/DEV-WEB?node-id=28-311&t=YV4AYmS3wX8gDGhK-1
 
 # Auteur
 Développé avec par Antoine RICHARD
