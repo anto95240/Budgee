@@ -1,4 +1,4 @@
-import { Link, useOutletContext } from "react-router";
+import { useOutletContext } from "react-router";
 import { useState, useMemo } from "react";
 import TransactionModal from "../../components/TransactionModal";
 import axios from "axios";
@@ -99,14 +99,14 @@ const TransactionPage = () => {
                         <td>{tx.transactionType === "credit" ? tx.amount : "-"}</td>
                         <td>{tx.solde.toFixed(2)}</td>
                         <td>
-                            <Link className="btn-edit" onClick={() => openEditModal(tx)}>
+                            <button className="btn-edit" onClick={() => openEditModal(tx)}>
                               <FontAwesomeIcon icon={faPen} />
-                            </Link>
+                            </button>
                         </td>
                         <td>
-                            <Link className="btn-delete" onClick={() => handleDeleteTransaction(tx._id)}>
+                            <button className="btn-delete" onClick={() => handleDeleteTransaction(tx._id)}>
                               <FontAwesomeIcon icon={faTrash} />
-                            </Link>
+                            </button>
                         </td>
                       </tr>
                     );
@@ -136,12 +136,12 @@ const TransactionPage = () => {
                       </span>
 
                       <div className="card-actions">
-                        <Link className="btn-edit" onClick={() => openEditModal(tx)}>
+                        <button className="btn-edit" onClick={() => openEditModal(tx)}>
                           <FontAwesomeIcon icon={faPen} />
-                        </Link>
-                        <Link className="btn-delete" onClick={() => handleDeleteTransaction(tx._id)}>
+                        </button>
+                        <button className="btn-delete" onClick={() => handleDeleteTransaction(tx._id)}>
                           <FontAwesomeIcon icon={faTrash} />
-                        </Link>
+                        </button>
                       </div>
                     </div>
                   );
